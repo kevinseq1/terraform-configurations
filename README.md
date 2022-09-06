@@ -9,7 +9,7 @@ This repository contains random terraform configuration files. Below is a detail
 
 ## File(s) 
 
-- [Terraform file to provision NGINX server container with terraform.]()
+- [Terraform file to provision NGINX server container with terraform.](https://github.com/kevinseq1/terraform-configurations/blob/main/tf-docker/main.tf)
 
 ## Usage
 _Each directory in this repo consists of a different terraform configuration file. Once in the directory run the following commands.
