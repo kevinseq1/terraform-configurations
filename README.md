@@ -17,7 +17,11 @@ _Each directory in this repo consists of a different terraform configuration fil
     ```
     terraform init
     ```
-- To apply the configurations in the `.tf` file
+- To view what the configuration in the `.tf` file will create.
+    ```
+    terraform plan
+    ```
+- To apply the configurations in the `.tf` file.
     ```
     terraform apply
     ```
