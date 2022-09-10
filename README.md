@@ -11,22 +11,29 @@ This repository contains random terraform configuration files. Below is a detail
 
 - [Terraform file to provision NGINX server container with terraform.](https://github.com/kevinseq1/terraform-configurations/blob/main/tf-docker/main.tf)
 - [Terraform file to provision an EC2 instance in a given region and subnet in AWS.](https://github.com/kevinseq1/terraform-configurations/blob/main/tf-aws/main.tf)
+- [Terraform file to provision two SNS topics in two different regions using terraform providers.](https://github.com/kevinseq1/terraform-configurations/blob/main/tf-aws/main2.tf)
 
 ## Usage
-_Each directory in this repo consists of a different terraform configuration file. Once in the directory run the following commands.
-- To initialize the directory
+- _Each directory in this repo consists of a different terraform configuration files in sub directories. (When running the following commands make sure only one `main.tf` is present in the directory and rename any `.tf` file to `main.tf` while using that configuration file)_
+
+- Enable verbose output logging for Terraform commands using:
+    ```
+    export TF_LOG=TRACE
+    ```
+
+- To initialize the directory:
     ```
     terraform init
     ```
-- To view what the configuration in the `.tf` file will create.
+- To view what the configuration in the `.tf` file will create:
     ```
     terraform plan
     ```
-- To apply the configurations in the `.tf` file.
+- To apply the configurations in the `.tf` file:
     ```
-    terraform apply
+    terraform apply --auto-approve
     ```
-- To remove all the configurations applied from the `.tf` file.
+- To remove all the configurations applied from the `.tf` file:
     ```
-    terraform destroy
+    terraform destroy --auto-approve
     ```
